@@ -15,4 +15,4 @@
 
 ### Create virtual env file by ```python3 -m venev .venv``` than install all dependecies by ```pip install -r requirements.txt```
 
-### To launch app ```python3 app.py```
+### To launch app using uWSGI  ```uwsgi --http :9090 --wsgi-file app.py```
