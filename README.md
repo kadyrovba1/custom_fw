@@ -1,4 +1,4 @@
-# This is python web applicatio using uWSGI interface
+# This is python web application using uWSGI interface
 
 
 ### Create .env file at settings.py level and enter these variables.
