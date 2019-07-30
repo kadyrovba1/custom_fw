@@ -1,7 +1,7 @@
 # This is python web application using uWSGI interface
 
 
-### Create .env file at settings.py level and enter these variables.
+### Create .env file and enter these variables.
 
 |Variables          |Description                            |Value                                                   |
 |-------------------|--------------------------------       |--------------------------------------------------------|
