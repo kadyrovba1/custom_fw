@@ -1,5 +1,6 @@
 import sqlalchemy as db
 import environ
+import os
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Table, Column, Integer, String, MetaData
 from sqlalchemy_utils import EmailType, URLType
@@ -12,6 +13,7 @@ user = env('user')
 password = env('password')
 server = env('server', default='localhost')
 database = env('database')
+
 
 Base = declarative_base()
 engine = db.create_engine('mysql+pymysql://{}:{}@{}/{}'.format(user, password, server, database), echo=True)

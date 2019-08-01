@@ -20,4 +20,5 @@ youtube-dl==2019.6.21
 ffmpeg
 django-environ
 uwsgi
-
+celery[redis]
+WebOb

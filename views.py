@@ -1,3 +1,4 @@
+import socket
 import re
 
 from cgi import parse_qs
@@ -19,8 +20,8 @@ def main_view(env, method):
         link = data[b'link'][0].decode()
         email = data[b'email'][0].decode()
         create_query(link, email)
-        send_link_mail(email, link)
+        send_link_mail.delay(email, link)
        
     response = render(template).encode('utf-8')
     return response
-    
+
