@@ -1,7 +1,7 @@
-# This is python web application using uWSGI interface
+# This is python web application that uses uWSGI
 
 
-### Create .env file at settings.py level and enter these variables.
+### Create .env file and enter these variables.
 
 |Variables          |Description                            |Value                                                   |
 |-------------------|--------------------------------       |--------------------------------------------------------|
@@ -15,4 +15,4 @@
 
 ### Create virtual env file by ```python3 -m venev .venv``` than install all dependecies by ```pip install -r requirements.txt```
 
-### To launch app ```python3 app.py```
+### To launch app using uWSGI  ```uwsgi --http :9090 --wsgi-file app.py```
