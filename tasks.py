@@ -18,13 +18,10 @@ environ.Env.read_env()
 subject = "Thanks for using our service!"
 body = "Here is your link to download mp3 file generated from youtube link."
 sender_email = 'vdconvertermp3@gmail.com'
-receiver_email = 'aktan.r.a@gmail.com'
 password = 'videoconverter123'
 
-# Create a multipart message and set headers
 email_message = MIMEMultipart('alternative')
 email_message['From'] = sender_email
-email_message['To'] = receiver_email
 email_message['Subject'] = subject
 
 
@@ -48,6 +45,9 @@ def send_link_mail(email, link):
     url = '127.0.0.1:9090'
     download_link = 'http://' + url + '/media/' + filename.replace(" ", "%20") + '.mp3'
     filename = filename + '.mp3'
+
+    receiver_email = email
+    email_message['To'] = receiver_email
 
     message = MIMEText(body + ' ' + download_link, 'plain')
     email_message.attach(message)
