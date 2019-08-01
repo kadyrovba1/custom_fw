@@ -16,3 +16,4 @@
 ### Create virtual env file by ```python3 -m venev .venv``` than install all dependecies by ```pip install -r requirements.txt```
 
 ### To launch app using uWSGI  ```uwsgi --http :9090 --wsgi-file app.py```
+### Than launch celery from same directory on another terminal by ```celery -A tasks worker --loglevel=info```
