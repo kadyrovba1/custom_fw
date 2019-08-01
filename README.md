@@ -16,7 +16,6 @@ And if you want to change user and password of mysql https://www.cyberciti.biz/f
 |server             |Your server *USE THIS VALUE ->         |127.0.0.1 or 'localhost'                                | 
 |database           |Your DB name                           |'your-db-name'                                          |
 |sender_email       |Email sender *USE THIS VALUE ->        |'vdconvertermp3@gmail.com'                              |
-|receiver_email     |Your email                             |'your-email'                                            |
 |password           |Password of email  *USE THIS VALUE ->  |'videoconverter123'                                     |
 
 ### Create virtual env file by ```python3 -m venev .venv``` than install all dependecies by ```pip install -r requirements.txt```
