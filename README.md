@@ -1,5 +1,11 @@
 # This is python web application that uses uWSGI
 
+### Before using
+Make sure to check that you have MySQL installed on your machine, if not: ```sudo apt-get install python3-dev``` and
+```sudo apt-get install python3-dev libmysqlclient-dev```
+### Than, create DB
+DB creation http://www.mysqltutorial.org/mysql-create-database/
+If you want to change user and password of mysql https://www.cyberciti.biz/faq/mysql-change-user-password/
 
 ### Create .env file and enter these variables.
 
