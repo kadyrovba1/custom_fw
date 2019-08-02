@@ -12,7 +12,6 @@ password = config('DB_PASSWORD')
 server = config('DB_SERVER', default='localhost')
 database = config('DB_NAME')
 
-
 Base = declarative_base()
 engine = db.create_engine('mysql+pymysql://{}:{}@{}/{}'.format(user, password, server, database), echo=True)
 Session = sessionmaker(bind=engine)

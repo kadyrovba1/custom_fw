@@ -19,9 +19,10 @@ subject = "Thanks for using our service!"
 body = "Here is your link to download mp3 file generated from youtube link."
 sender_email = 'vdconvertermp3@gmail.com'
 
+
+
 password = 'videoconverter123'
 
-# Create a multipart message and set headers
 email_message = MIMEMultipart('alternative')
 email_message['From'] = sender_email
 
