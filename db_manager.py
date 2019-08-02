@@ -1,18 +1,16 @@
 import sqlalchemy as db
-import environ
+from decouple import config
 import os
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Table, Column, Integer, String, MetaData
 from sqlalchemy_utils import EmailType, URLType
 from sqlalchemy.orm import sessionmaker
 
-env = environ.Env()
-environ.Env.read_env()
 
-user = env('user')
-password = env('password')
-server = env('server', default='localhost')
-database = env('database')
+user = config('DB_USER')
+password = config('DB_PASSWORD')
+server = config('DB_SERVER', default='localhost')
+database = config('DB_NAME')
 
 
 Base = declarative_base()
